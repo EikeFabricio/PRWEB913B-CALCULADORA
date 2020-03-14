@@ -1,48 +1,42 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <title>Calculadora</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='./style/main.css'>
-    <script src="./js/index.js"></script>
-</head>
-<body>
-    <div class="box">
-        <div class="result" id="result"></div>
-        <div class="buttons-1">
-            <button onclick="add('1')">1</button>
-            <button onclick="add('2')">2</button>
-            <button onclick="add('3')">3</button>
-            <button onclick="add('4')">4</button> 
-        </div>
+    <header>
+        <title>Calculadora</title>
+        <script src="./script/index.js"></script>
+        <link rel="stylesheet" href="./style/style.css" type="text/css" media="screen"/>
+    </header>
+    <body>
+        <div class="box">
+            <input type="text" disabled="true" id="r">
 
-        <div class="buttons-2">
-            <button onclick="add('5')">5</button>
-            <button onclick="add('6')">6</button>
-            <button onclick="add('7')">7</button>
-            <button onclick="add('8')">8</button> 
+            <div class="buttons" id="a">
+                <button onClick="add('1')">1</button>
+                <button onClick="add('2')">2</button>
+                <button onClick="add('3')">3</button>
+                <button onClick="add('4')">4</button>
+            </div>
+            <div class="buttons" id="b">
+                <button onClick="add('5')">5</button>
+                <button onClick="add('6')">6</button>
+                <button onClick="add('7')">7</button>
+                <button onClick="add('8')">8</button>
+            </div>
+            <div class="buttons" id="c">
+                <button onClick="add('9')">9</button>
+                <button onClick="add('0')">0</button>
+                <button onClick="add('+')">+</button>
+                <button onClick="add('-')">-</button>
+            </div>
+            <div class="buttons" id="d">
+                <button onClick="add('/')">/</button>
+                <button onClick="add('*')">*</button>
+                <button onClick="add('.')">.</button>
+                <button onClick="solve()">=</button>
+            </div>
+            <div class="buttons" id="e">
+                <button onClick="add('(')">(</button>
+                <button onClick="add(')')">)</button>
+                <button onClick="cs()">CE</button>
+            </div>
         </div>
-
-        <div class="buttons-3">
-            <button onclick="add('9')">9</button>
-            <button onclick="add('0')">0</button>
-            <button onclick="add('+')">+</button>
-            <button onclick="add('-')">-</button> 
-        </div>
-
-        <div class="buttons-4">
-            <button onclick="add('÷')">÷</button>
-            <button onclick="add('x')">x</button>
-            <button onclick="add('.')">.</button>
-            <button onclick="display()">=</button> 
-        </div>
-
-        <div class="buttons-5">
-            <button onclick="clearScreen()">Limpar</button>
-            <button onclick="add('(')">(</button>
-            <button onclick="add(')')">)</button>
-        </div>
-    </div>
-    
-</body>
+    </body>
 </html>
