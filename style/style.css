@@ -5,14 +5,14 @@ body {
 .box {
     position: relative;
     width: 415px;
-    height: 585px;
+    height: 570px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
     background: #355863;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
+    justify-content: space-between;
 }
 
 .box input {
@@ -24,6 +24,9 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     border: none;
+    font-family: Minecraftia;
+    font-size: 36px;
+    padding: 10px 14px;
 }
 
 .box button {
@@ -40,7 +43,70 @@ body {
     font-weight: normal;
     font-size: 36px;
     line-height: 44px;
-    margin-top: 2.5%;
+    margin-top: 15px;
     margin-left: 5%;
     outline: none;
+    transition: all 0.2s;
+}
+
+.box button:hover {
+   opacity: 70%;
+   cursor: pointer;
+   box-shadow: none;
+   border-radius: 10px;
+}
+
+.box button[id = "dot"] {
+    width: 175px;
+    height: 75px;
+    background: rgba(58, 206, 239, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    opacity: 100%;
+    color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    margin-top: 15px;
+    margin-left: 5%;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.box button[id = "dot"]:hover {
+    opacity: 70%;
+    cursor: pointer;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+.box button[id = "solve"] {
+    position: absolute;
+    width: 75px;
+    height: 255px;
+    background: rgba(58, 206, 239, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    opacity: 100%;
+    color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    margin-left: 77%;
+    outline: none;
+    bottom: 17px;
+    transition: all 0.2s;
+}
+
+.box button[id = "solve"]:hover {
+    opacity: 70%;
+    cursor: pointer;
+    box-shadow: none;
+    border-radius: 10px;
 }
