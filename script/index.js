@@ -6,16 +6,16 @@ function get(id) {
     return document.getElementById(id).value;
 } 
 
-function add(value) {
-    const id = "r";
+const id = "r";
 
+function add(value) {
     set(get(id) + value, id)
 }
 
 function cs() {
-    set('', 'r');
+    set('', id);
 }
 
 function solve() {
-    return set(eval(get('r')), 'r');
+    return set(eval(get(id)), id);
 }

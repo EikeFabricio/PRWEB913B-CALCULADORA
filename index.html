@@ -3,39 +3,38 @@
         <title>Calculadora</title>
         <script src="./script/index.js"></script>
         <link rel="stylesheet" href="./style/style.css" type="text/css" media="screen"/>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     </header>
     <body>
         <div class="box">
             <input type="text" disabled="true" id="r">
 
             <div class="buttons" id="a">
-                <button onClick="add('1')">1</button>
-                <button onClick="add('2')">2</button>
-                <button onClick="add('3')">3</button>
-                <button onClick="add('4')">4</button>
+                <button onClick="cs()" id="clear">C</button>
+                <button onClick="add('+')" id="plus">+</button>
+                <button onClick="add('-')" id="minus">-</button>
+                <button onClick="add('*')" id="multiply">*</button>
             </div>
             <div class="buttons" id="b">
-                <button onClick="add('5')">5</button>
-                <button onClick="add('6')">6</button>
-                <button onClick="add('7')">7</button>
-                <button onClick="add('8')">8</button>
+                <button onClick="add('1')" id="one">1</button>
+                <button onClick="add('2')" id="two">2</button>
+                <button onClick="add('3')" id="three">3</button>
+                <button onClick="add('/')" id="divide">/</button>
             </div>
             <div class="buttons" id="c">
-                <button onClick="add('9')">9</button>
-                <button onClick="add('0')">0</button>
-                <button onClick="add('+')">+</button>
-                <button onClick="add('-')">-</button>
+                <button onClick="add('4')" id="four">4</button>
+                <button onClick="add('5')" id="five">5</button>
+                <button onClick="add('6')" id="six">6</button>
+                <button onClick="solve()" id="equals">=</button>
             </div>
             <div class="buttons" id="d">
-                <button onClick="add('/')">/</button>
-                <button onClick="add('*')">*</button>
-                <button onClick="add('.')">.</button>
-                <button onClick="solve()">=</button>
+                <button onClick="add('7')" id="seven">7</button>
+                <button onClick="add('8')" id="multiply">8</button>
+                <button onClick="add('9')" id="dot">9</button>
             </div>
             <div class="buttons" id="e">
-                <button onClick="add('(')">(</button>
-                <button onClick="add(')')">)</button>
-                <button onClick="cs()">CE</button>
+                <button onClick="add('0')" id="zero">0</button>
+                <button onClick="add('.')" id="dot">.</button>
             </div>
         </div>
     </body>
