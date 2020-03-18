@@ -17,5 +17,5 @@ function cs() {
 }
 
 function solve() {
-    return set(eval(get(id)), id);
+    set(eval(get(id)), id);
 }
