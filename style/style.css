@@ -3,7 +3,7 @@ body {
 }
 
 .box {
-    position: relative;
+    position: absolute;
     width: 415px;
     height: 570px;
     left: 50%;
